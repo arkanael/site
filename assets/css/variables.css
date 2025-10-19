@@ -7,7 +7,7 @@
     --primary-orange: #EA872D;
     --primary-orange-dark: #d67a26;
     --primary-orange-light: #f59e0b;
-    
+
     /* Cores neutras */
     --white: #ffffff;
     --gray-50: #f8fafc;
@@ -20,7 +20,7 @@
     --gray-700: #334155;
     --gray-800: #1e293b;
     --gray-900: #0f172a;
-    
+
     /* Cores de estado */
     --success: #10b981;
     --success-light: #d1fae5;
@@ -28,55 +28,54 @@
     --error-light: #fef2f2;
     --warning: #f59e0b;
     --warning-light: #fef3c7;
-    
+
     /* Gradientes otimizados */
-    --hero-overlay-gradient: linear-gradient(
-        135deg, 
-        rgba(3, 82, 139, 0.9) 0%, 
-        rgba(14, 116, 144, 0.85) 50%,
-        rgba(3, 82, 139, 0.8) 100%
-    );
-    --hero-texture-gradient: 
-        radial-gradient(circle at 25% 25%, rgba(255,255,255,0.05) 0%, transparent 50%),
-        radial-gradient(circle at 75% 75%, rgba(255,255,255,0.03) 0%, transparent 50%);
+    --hero-overlay-gradient: linear-gradient(135deg,
+            rgba(3, 82, 139, 0.95) 0%,
+            rgba(14, 116, 144, 0.9) 50%,
+            rgba(3, 82, 139, 0.95) 100%);
+    --hero-texture-gradient:
+        radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.03) 0%, transparent 50%);
     --button-primary-gradient: linear-gradient(135deg, #EA872D 0%, #d67a26 100%);
-    --button-secondary-gradient: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+    --button-secondary-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
     --support-section-gradient: linear-gradient(135deg, #03528B 0%, #0e7490 100%);
-    
+
     /* Sombras otimizadas */
-    --text-shadow-strong: 0 2px 4px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.2);
-    --text-shadow-subtle: 0 1px 3px rgba(0,0,0,0.2);
+    --text-shadow-strong: 0 2px 4px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+    --text-shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.2);
     --box-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
     --box-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
     --box-shadow-lg: 0 8px 25px rgba(0, 0, 0, 0.15);
     --box-shadow-xl: 0 8px 25px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.15);
+
     --box-shadow-button-hover: 0 8px 25px rgba(234, 135, 45, 0.3);
     --box-shadow-button-secondary: 0 8px 25px rgba(255, 255, 255, 0.2);
     --box-shadow-focus: 0 0 0 3px rgba(234, 135, 45, 0.1);
-    
+
     /* Transições e animações */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     --transition-fast: all 0.2s ease;
     --transition-slow: all 0.5s ease;
-    
+
     /* Durações de animação */
     --animation-duration-fast: 0.3s;
     --animation-duration-normal: 0.5s;
     --animation-duration-slow: 0.8s;
-    
+
     /* Easing functions */
     --ease-out-cubic: cubic-bezier(0.4, 0, 0.2, 1);
     --ease-in-out-cubic: cubic-bezier(0.4, 0, 0.6, 1);
     --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    
+
     /* Bordas e raios */
     --border-radius-sm: 6px;
     --border-radius-md: 8px;
     --border-radius-lg: 12px;
     --border-radius-xl: 16px;
     --border-radius-full: 50%;
-    
+
     /* Espaçamentos */
     --spacing-xs: 0.25rem;
     --spacing-sm: 0.5rem;
@@ -86,22 +85,22 @@
     --spacing-2xl: 3rem;
     --spacing-3xl: 4rem;
     --spacing-4xl: 5rem;
-    
+
     /* Tipografia */
     --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
-    
+
     --line-height-tight: 1.1;
     --line-height-normal: 1.2;
     --line-height-relaxed: 1.6;
     --line-height-loose: 1.8;
-    
+
     --letter-spacing-tight: -0.02em;
     --letter-spacing-normal: 0;
     --letter-spacing-wide: 0.025em;
-    
+
     /* Z-index layers */
     --z-index-dropdown: 1000;
     --z-index-sticky: 1020;
@@ -110,23 +109,23 @@
     --z-index-modal: 1050;
     --z-index-popover: 1060;
     --z-index-tooltip: 1070;
-    
+
     /* Backdrop filter */
     --backdrop-blur-sm: blur(4px);
     --backdrop-blur-md: blur(8px);
     --backdrop-blur-lg: blur(12px);
     --backdrop-blur-xl: blur(16px);
-    
+
     /* Glassmorphism effects */
     --glass-background: rgba(255, 255, 255, 0.1);
     --glass-border: rgba(255, 255, 255, 0.2);
     --glass-backdrop: blur(10px);
-    
+
     /* Trust indicators */
     --trust-badge-bg: rgba(255, 255, 255, 0.1);
     --trust-badge-border: rgba(255, 255, 255, 0.2);
     --trust-badge-backdrop: blur(10px);
-    
+
     /* Performance optimizations */
     --will-change-transform: transform;
     --will-change-auto: auto;
