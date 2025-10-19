@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Futuroon</title>
+    <meta name="description"
+        content="A Futuroon potencializa jovens e adultos da periferia, democratizando o acesso à educação e tecnologia.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a class="logo" href="index.html">
+                <img alt="Futuroon" loading="lazy" width="200" height="62" src="assets/futuroon.svg">
+            </a>
+            <button type="button" aria-label="Abrir menu" class="menu-button">
+                <svg viewbox="0 0 24 24" class="menu-icon" stroke="currentColor" fill="none" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <div class="menu">
+                <a class="menu-link" href="#quem-somos">Quem somos nós</a>
+                <div class="dropdown">
+                    <button class="menu-link dropdown-toggle" type="button" aria-expanded="false">
+                        Nossos Cursos
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#letramento-digital">
+                            <i class="fas fa-laptop"></i>
+                            <span>Letramento Digital</span>
+                        </a>
+                        <a class="dropdown-item" href="#programacao">
+                            <i class="fas fa-code"></i>
+                            <span>Programação</span>
+                        </a>
+                        <a class="dropdown-item" href="#games">
+                            <i class="fas fa-gamepad"></i>
+                            <span>Games</span>
+                        </a>
+                        <a class="dropdown-item" href="#ingles-online">
+                            <i class="fas fa-globe"></i>
+                            <span>Inglês (online)</span>
+                        </a>
+                        <a class="dropdown-item" href="#letramento-melhor-idade">
+                            <i class="fas fa-heart"></i>
+                            <span>Letramento Digital - Melhor Idade</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="menu-link dropdown-toggle" type="button" aria-expanded="false">
+                        Doações
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="doacao.html">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Doação online</span>
+                        </a>
+                        <a class="dropdown-item" href="doacao.html#apadrinhe-aluno">
+                            <i class="fas fa-user-friends"></i>
+                            <span>Apadrinhe um aluno</span>
+                        </a>
+                        <a class="dropdown-item" href="doacao.html#minha-vez-ajudar">
+                            <i class="fas fa-clipboard-list"></i>
+                            <span>Minha Vez de Ajudar</span>
+                        </a>
+                        <a class="dropdown-item" href="doacao.html#doacao-kit">
+                            <i class="fas fa-box"></i>
+                            <span>Uma Doação Um Kit</span>
+                        </a>
+                        <a class="dropdown-item" href="doacao.html#dados-bancarios">
+                            <i class="fas fa-university"></i>
+                            <span>Dados bancários</span>
+                        </a>
+                    </div>
+                </div>
+                <a class="menu-link" href="#contato">Contato</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Tecnologia<br>
+                        para transformar a<br>
+                        periferia em potência
+                    </h1>
+                    <p class="hero-subtitle">
+                        Promovendo a inclusão digital de jovens, mães e idosos,<br>
+                        fortalecendo o impacto social e ampliando oportunidades<br>
+                        no mercado tecnológico.
+                    </p>
+                    <div class="hero-buttons">
+                        <a class="hero-btn primary" href="#projetos" aria-label="Conheça nossos projetos">
+                            Conheça nossos projetos
+                        </a>
+                        <a class="hero-btn secondary" href="#missao" aria-label="Nossa missão">
+                            Nossa missão
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="quem-somos">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 class="about-title">Quem somos</h2>
+                        <p class="about-description">
+                            O Instituto FuturoON é um projeto social, no Complexo da Coruja, em
+                            São Gonçalo, que leva <span class="highlight">educação e tecnologia</span> para jovens e
+                            adultos
+                            da periferia. Trabalhamos com uma metodologia que entende as
+                            realidades, focando no <span class="highlight">desenvolvimento profissional</span>, na <span
+                                class="highlight">inclusão
+                                digital</span> e na formação cidadã.
+                        </p>
+                        <a href="#projetos" class="about-link">
+                            <i class="fas fa-arrow-right"></i>
+                            Conheça nossa história completa
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="support">
+            <div class="container">
+                <div class="support-content">
+                    <h2 class="support-title">Apoie essa causa</h2>
+                    <p class="support-description">
+                        Invista no Futuro. Apoie a juventude e a transformação social através da cultura, do turismo e
+                        do desenvolvimento sustentável.
+                    </p>
+                    <div class="support-buttons">
+                        <a href="doacao.html" class="support-btn" aria-label="Doe R$20 para apoiar o Instituto FuturOON">
+                            Doe R$20
+                        </a>
+                        <a href="doacao.html" class="support-btn" aria-label="Doe R$50 para apoiar o Instituto FuturOON">
+                            Doe R$50
+                        </a>
+                        <a href="doacao.html" class="support-btn" aria-label="Doe R$100 para apoiar o Instituto FuturOON">
+                            Doe R$100
+                        </a>
+                        <a href="doacao.html" class="support-btn"
+                            aria-label="Escolha outros valores para doar ao Instituto FuturOON">
+                            Outros valores
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projetos"></section>
+        <div class="container">
+            <h2 class="projects-title">Nossos Projetos</h2>
+            <div class="projects-grid">
+                <div class="project-card" id="games">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1596496181848-3091d4878b24?w=400&h=200&fit=crop&crop=center"
+                            alt="Oficinas de Games" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Oficinas de Games</h3>
+                        <p class="project-description">Desenvolvimento de jogos com Scratch, Unity e GameMaker. Os
+                            jovens aprendem programação de forma lúdica e criativa.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" id="programacao">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=400&h=200&fit=crop&crop=center"
+                            alt="Podcast Deixa Brilhar" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Podcast Deixa Brilhar</h3>
+                        <p class="project-description">Projeto de comunicação onde jovens da comunidade produzem
+                            conteúdo sobre tecnologia, educação e transformação social.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" id="letramento-digital">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=200&fit=crop&crop=center"
+                            alt="Formação em Tecnologia para Mães Solo" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Formação em Tecnologia para Mães Solo</h3>
+                        <p class="project-description">Programa especializado que oferece cursos de tecnologia com
+                            horários flexíveis e suporte para mães solo.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" id="letramento-melhor-idade">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=400&h=200&fit=crop&crop=center"
+                            alt="Eventos e Rodas de Conversa" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Eventos e Rodas de Conversa</h3>
+                        <p class="project-description">Encontros regulares que promovem networking, troca de
+                            experiências e discussões sobre mercado de trabalho.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section class="impact" id="ingles-online">
+            <div class="impact-overlay"></div>
+            <div class="container">
+                <h2 class="impact-title">Nosso Impacto</h2>
+                <div class="impact-stats">
+                    <div class="stat-item">
+                        <h3 class="stat-number">+300</h3>
+                        <span class="stat-label">formaturas</span>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number">+100</h3>
+                        <span class="stat-label">eventos e palestras</span>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number">+50</h3>
+                        <span class="stat-label">jovens empregados</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners">
+            <div class="container">
+                <h2 class="section-title">Nossos Parceiros</h2>
+
+                <div class="partners-grid">
+                    <div class="partner-logo">
+                        <img src="/assets/imagens/parceiros/petrobras.png" alt="Petrobras" loading="lazy">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://via.placeholder.com/140x70/ffffff/0066CC?text=SENAC" alt="SENAC"
+                            loading="lazy">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://via.placeholder.com/140x70/ffffff/E31E24?text=SEBRAE" alt="SEBRAE"
+                            loading="lazy">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://via.placeholder.com/140x70/ffffff/1E3A8A?text=Prefeitura"
+                            alt="Prefeitura São Gonçalo" loading="lazy">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://via.placeholder.com/140x70/ffffff/00BCF2?text=Microsoft" alt="Microsoft"
+                            loading="lazy">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://via.placeholder.com/140x70/ffffff/4285F4?text=Google" alt="Google"
+                            loading="lazy">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://via.placeholder.com/140x70/ffffff/0052CC?text=SENAI" alt="SENAI"
+                            loading="lazy">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://via.placeholder.com/140x70/ffffff/FF6B35?text=FIRJAN" alt="FIRJAN"
+                            loading="lazy">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://via.placeholder.com/140x70/ffffff/8B5CF6?text=UFF" alt="UFF" loading="lazy">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://via.placeholder.com/140x70/ffffff/DC2626?text=Coca-Cola" alt="Coca-Cola"
+                            loading="lazy">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://via.placeholder.com/140x70/ffffff/059669?text=Natura" alt="Natura"
+                            loading="lazy">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://via.placeholder.com/140x70/ffffff/7C3AED?text=Itaú" alt="Itaú" loading="lazy">
+                    </div>
+                </div>
+
+                <p class="partners-cta">
+                    Quer ser nosso parceiro? <a href="#contato" class="partner-link">Entre em contato</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Histórias de sucesso -->
+        <section class="success-stories-section">
+            <div class="container">
+                <h2 class="stories-main-title">Histórias de sucesso</h2>
+                <div class="stories-grid">
+                    <div class="story-card">
+                        <div class="story-content">
+                            <p class="story-text">
+                                "Graças ao curso de programação da Futuroon, consegui meu primeiro emprego na área de tecnologia. 
+                                Hoje trabalho como desenvolvedora e ajudo minha família."
+                            </p>
+                            <div class="story-author">
+                                <strong>Maria Silva</strong>
+                                <span>Formada em 2023</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="story-card">
+                        <div class="story-content">
+                            <p class="story-text">
+                                "O letramento digital me deu confiança para usar a tecnologia no meu dia a dia. 
+                                Agora consigo ajudar meus filhos com os estudos online."
+                            </p>
+                            <div class="story-author">
+                                <strong>João Santos</strong>
+                                <span>Formado em 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Transparência total -->
+        <section class="transparency-section">
+            <div class="container">
+                <h2 class="transparency-main-title">Transparência total</h2>
+                <p class="transparency-main-text">
+                    Publicamos relatórios anuais detalhados sobre o uso das doações. 
+                    Você pode acompanhar o impacto da sua contribuição através dos nossos canais oficiais.
+                </p>
+                <div class="transparency-links">
+                    <a href="#" class="transparency-link">
+                        <i class="fas fa-file-alt"></i>
+                        Relatório Anual 2024
+                    </a>
+                    <a href="#" class="transparency-link">
+                        <i class="fas fa-chart-bar"></i>
+                        Prestação de Contas
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contato">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <img src="assets/futuroon.svg" alt="Futuroon" width="150" loading="lazy">
+                    <p class="footer-description">
+                        Instituto social que potencializa jovens e adultos da periferia, democratizando o acesso à
+                        educação e tecnologia em São Gonçalo.
+                    </p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="#quem-somos">Quem somos</a></li>
+                    <li><a href="#projetos">Nossos Cursos</a></li>
+                    <li><a href="doacao.html">Doações</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contato</h3>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Rua Silva jardim, 689 <br>Neves - São Gonçalo - Rio de Janeiro</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>futurooon@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>(21) 97087-2194</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Instituto Futuroon. Todos os direitos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

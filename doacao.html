@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Doações - Futuroon</title>
+    <meta name="description"
+        content="Apoie a Futuroon e ajude a transformar vidas através da educação e tecnologia na periferia de São Gonçalo.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="doacao.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+    <header class="header">
+        <nav class="nav">
+            <a class="logo" href="index.html">
+                <img alt="Futuroon" loading="lazy" width="200" height="62" src="assets/futuroon.svg">
+            </a>
+            <button type="button" aria-label="Abrir menu" class="menu-button">
+                <svg viewbox="0 0 24 24" class="menu-icon" stroke="currentColor" fill="none" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <div class="menu">
+                <a class="menu-link" href="index.html#quem-somos">Quem somos nós</a>
+                <div class="dropdown">
+                    <button class="menu-link dropdown-toggle" type="button" aria-expanded="false">
+                        Nossos Cursos
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="index.html#letramento-digital">
+                            <i class="fas fa-laptop"></i>
+                            <span>Letramento Digital</span>
+                        </a>
+                        <a class="dropdown-item" href="index.html#programacao">
+                            <i class="fas fa-code"></i>
+                            <span>Programação</span>
+                        </a>
+                        <a class="dropdown-item" href="index.html#games">
+                            <i class="fas fa-gamepad"></i>
+                            <span>Games</span>
+                        </a>
+                        <a class="dropdown-item" href="index.html#ingles-online">
+                            <i class="fas fa-globe"></i>
+                            <span>Inglês (online)</span>
+                        </a>
+                        <a class="dropdown-item" href="index.html#letramento-melhor-idade">
+                            <i class="fas fa-heart"></i>
+                            <span>Letramento Digital - Melhor Idade</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="menu-link dropdown-toggle active" type="button" aria-expanded="false">
+                        Doações
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item active" href="doacao.html">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Doação online</span>
+                        </a>
+                        <a class="dropdown-item" href="#apadrinhe-aluno">
+                            <i class="fas fa-user-friends"></i>
+                            <span>Apadrinhe um aluno</span>
+                        </a>
+                        <a class="dropdown-item" href="#minha-vez-ajudar">
+                            <i class="fas fa-clipboard-list"></i>
+                            <span>Minha Vez de Ajudar</span>
+                        </a>
+                        <a class="dropdown-item" href="#doacao-kit">
+                            <i class="fas fa-box"></i>
+                            <span>Uma Doação Um Kit</span>
+                        </a>
+                        <a class="dropdown-item" href="#dados-bancarios">
+                            <i class="fas fa-university"></i>
+                            <span>Dados bancários</span>
+                        </a>
+                    </div>
+                </div>
+                <a class="menu-link" href="index.html#contato">Contato</a>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main" id="main-content">
+        <!-- Hero Section -->
+        <section class="donation-hero" aria-labelledby="hero-title">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title" id="hero-title">
+                        Apoie nossa causa
+                    </h1>
+                    <p class="hero-subtitle">
+                        Sua doação transforma vidas através da educação e tecnologia.<br>
+                        Juntos, podemos democratizar o acesso ao conhecimento<br>
+                        e criar oportunidades na periferia de São Gonçalo.
+                    </p>
+                    <div class="trust-indicators">
+                        <div class="trust-badge">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Doação 100% segura</span>
+                        </div>
+                        <div class="trust-badge">
+                            <i class="fas fa-certificate"></i>
+                            <span>Organização certificada</span>
+                        </div>
+                        <div class="trust-badge">
+                            <i class="fas fa-heart"></i>
+                            <span>Transparência total</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Donation Form Section -->
+        <section class="donation-form-section" aria-labelledby="form-title">
+            <div class="container">
+                <div class="donation-form-container">
+                    <div class="form-header">
+                        <h2 class="form-title" id="form-title">Faça sua doação</h2>
+                        <p class="form-subtitle">Escolha o valor e a forma de pagamento que preferir</p>
+                    </div>
+
+                    <form class="donation-form" id="donationForm" novalidate aria-label="Formulário de doação"
+                        role="form">
+                        <!-- Security token field -->
+                        <input type="hidden" id="securityToken" name="securityToken" value="">
+                        <!-- Amount Selection -->
+                        <div class="form-section">
+                            <h3 class="section-title" id="amount-section-title">Valor da doação</h3>
+                            <div class="amount-selection" role="group" aria-labelledby="amount-section-title">
+                                <div class="predefined-amounts" role="group"
+                                    aria-label="Valores predefinidos de doação">
+                                    <button type="button" class="amount-btn" data-amount="25" aria-label="Doar 25 reais"
+                                        tabindex="0">R$ 25</button>
+                                    <button type="button" class="amount-btn" data-amount="50"
+                                        aria-label="Doar 50 reais">R$ 50</button>
+                                    <button type="button" class="amount-btn" data-amount="75"
+                                        aria-label="Doar 75 reais">R$ 75</button>
+                                    <button type="button" class="amount-btn" data-amount="100"
+                                        aria-label="Doar 100 reais">R$ 100</button>
+                                </div>
+                                <div class="custom-amount">
+                                    <label for="customAmount" class="form-label">Ou escolha outro valor:</label>
+                                    <div class="input-group">
+                                        <span class="input-prefix" aria-hidden="true">R$</span>
+                                        <input type="number" id="customAmount" name="customAmount" class="form-input"
+                                            placeholder="0,00" min="5" step="0.01"
+                                            aria-describedby="amountError amount-help"
+                                            aria-label="Valor personalizado da doação em reais">
+                                    </div>
+                                    <div class="sr-only" id="amount-help">Valor mínimo: 5 reais. Máximo: 10.000 reais
+                                    </div>
+                                    <div class="error-message" id="amountError" role="alert" aria-live="polite"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Payment Method Selection -->
+                        <div class="form-section">
+                            <h3 class="section-title" id="payment-section-title">Forma de pagamento</h3>
+                            <div class="payment-methods" role="group" aria-labelledby="payment-section-title">
+                                <button type="button" class="payment-method-btn" data-method="pix"
+                                    aria-label="Selecionar PIX como forma de pagamento" tabindex="0">
+                                    <i class="fas fa-qrcode" aria-hidden="true"></i>
+                                    <span>PIX</span>
+                                </button>
+                                <button type="button" class="payment-method-btn" data-method="credit_card"
+                                    aria-label="Selecionar Cartão de Crédito como forma de pagamento">
+                                    <i class="fas fa-credit-card" aria-hidden="true"></i>
+                                    <span>Cartão de Crédito</span>
+                                </button>
+                                <button type="button" class="payment-method-btn" data-method="bank_transfer"
+                                    aria-label="Selecionar Transferência Bancária como forma de pagamento">
+                                    <i class="fas fa-university" aria-hidden="true"></i>
+                                    <span>Transferência</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Donor Information -->
+                        <div class="form-section">
+                            <h3 class="section-title" id="donor-section-title">Seus dados</h3>
+                            <div class="form-grid" role="group" aria-labelledby="donor-section-title">
+                                <div class="form-group">
+                                    <label for="donorName" class="form-label">Nome completo *</label>
+                                    <input type="text" id="donorName" name="donorName" class="form-input" required
+                                        aria-describedby="nameError name-help" aria-label="Nome completo do doador"
+                                        autocomplete="name" spellcheck="false">
+                                    <div class="sr-only" id="name-help">Campo obrigatório. Mínimo 2 caracteres</div>
+                                    <div class="error-message" id="nameError" role="alert" aria-live="polite"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="donorEmail" class="form-label">E-mail *</label>
+                                    <input type="email" id="donorEmail" name="donorEmail" class="form-input" required
+                                        aria-describedby="emailError email-help"
+                                        aria-label="Endereço de e-mail do doador" autocomplete="email"
+                                        spellcheck="false">
+                                    <div class="sr-only" id="email-help">Campo obrigatório. Formato: exemplo@email.com
+                                    </div>
+                                    <div class="error-message" id="emailError" role="alert" aria-live="polite"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="donorPhone" class="form-label">Telefone (opcional)</label>
+                                    <input type="tel" id="donorPhone" name="donorPhone" class="form-input"
+                                        placeholder="(21) 99999-9999" aria-describedby="phoneError phone-help"
+                                        aria-label="Número de telefone do doador" autocomplete="tel">
+                                    <div class="sr-only" id="phone-help">Campo opcional. Formato: (DD) 9XXXX-XXXX</div>
+                                    <div class="error-message" id="phoneError" role="alert" aria-live="polite"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Security and Privacy -->
+                        <div class="form-section">
+                            <div class="security-info">
+                                <div class="security-badges">
+                                    <div class="security-badge">
+                                        <i class="fas fa-lock"></i>
+                                        <span>SSL Seguro</span>
+                                    </div>
+                                    <div class="security-badge">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <span>Dados Protegidos</span>
+                                    </div>
+                                </div>
+                                <p class="privacy-text">
+                                    Ao continuar, você concorda com nossa
+                                    <a href="#" class="privacy-link">Política de Privacidade</a> e
+                                    <a href="#" class="privacy-link">Termos de Uso</a>.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="form-actions">
+                            <button type="submit" class="donate-btn" disabled
+                                aria-label="Finalizar doação - botão desabilitado até preencher todos os campos obrigatórios"
+                                aria-describedby="submit-help">
+                                <i class="fas fa-heart" aria-hidden="true"></i>
+                                Finalizar doação
+                            </button>
+                            <div class="sr-only" id="submit-help">Preencha o valor, forma de pagamento e seus dados para
+                                habilitar este botão</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Information Section -->
+        <section class="impact-info" aria-labelledby="impact-title">
+            <div class="container">
+                <div class="impact-content">
+                    <div class="impact-header">
+                        <h2 class="impact-title" id="impact-title">Como sua doação faz a diferença</h2>
+                        <p class="impact-subtitle">
+                            Cada real doado é investido diretamente em educação e transformação social
+                        </p>
+                    </div>
+
+                    <div class="impact-grid">
+                        <div class="impact-card">
+                            <div class="impact-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3 class="impact-card-title">Educação</h3>
+                            <p class="impact-percentage">60%</p>
+                            <p class="impact-description">
+                                Cursos de tecnologia, programação e letramento digital para jovens e adultos
+                            </p>
+                        </div>
+
+                        <div class="impact-card">
+                            <div class="impact-icon">
+                                <i class="fas fa-laptop"></i>
+                            </div>
+                            <h3 class="impact-card-title">Equipamentos</h3>
+                            <p class="impact-percentage">25%</p>
+                            <p class="impact-description">
+                                Computadores, tablets e materiais didáticos para as aulas
+                            </p>
+                        </div>
+
+                        <div class="impact-card">
+                            <div class="impact-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3 class="impact-card-title">Equipe</h3>
+                            <p class="impact-percentage">10%</p>
+                            <p class="impact-description">
+                                Professores e coordenadores especializados em educação social
+                            </p>
+                        </div>
+
+                        <div class="impact-card">
+                            <div class="impact-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <h3 class="impact-card-title">Infraestrutura</h3>
+                            <p class="impact-percentage">5%</p>
+                            <p class="impact-description">
+                                Manutenção do espaço físico e custos operacionais
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <img src="assets/futuroon.svg" alt="Futuroon" width="150" loading="lazy">
+                    <p class="footer-description">
+                        Instituto social que potencializa jovens e adultos da periferia, democratizando o acesso à
+                        educação e tecnologia em São Gonçalo.
+                    </p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="index.html#quem-somos">Quem somos</a></li>
+                    <li><a href="index.html#projetos">Nossos Cursos</a></li>
+                    <li><a href="doacao.html">Doações</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contato</h3>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Rua Silva jardim, 689 <br>Neves - São Gonçalo - Rio de Janeiro</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>futurooon@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>(21) 97087-2194</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Instituto Futuroon. Todos os direitos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="donation-form.js"></script>
+</body>
+
+</html>
