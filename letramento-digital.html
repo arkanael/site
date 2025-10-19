@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Letramento Digital - Futuroon</title>
+    <meta name="description"
+        content="Curso de Letramento Digital da Futuroon. Aprenda a usar tecnologia no dia a dia e desenvolva habilidades digitais essenciais.">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/course.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a class="logo" href="index.html">
+                <img alt="Futuroon" loading="lazy" width="200" height="62" src="assets/futuroon.svg">
+            </a>
+            <button type="button" aria-label="Abrir menu" class="menu-button">
+                <svg viewbox="0 0 24 24" class="menu-icon" stroke="currentColor" fill="none" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <div class="menu">
+                <a class="menu-link" href="index.html#quem-somos">Quem somos</a>
+                <div class="dropdown">
+                    <button class="menu-link dropdown-toggle active" type="button" aria-expanded="false">
+                        Nossos Cursos
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item active" href="letramento-digital.html">
+                            <i class="fas fa-laptop"></i>
+                            <span>Letramento Digital</span>
+                        </a>
+                        <a class="dropdown-item" href="programacao.html">
+                            <i class="fas fa-code"></i>
+                            <span>Programação</span>
+                        </a>
+                        <a class="dropdown-item" href="games.html">
+                            <i class="fas fa-gamepad"></i>
+                            <span>Games</span>
+                        </a>
+                        <a class="dropdown-item" href="ingles.html">
+                            <i class="fas fa-globe"></i>
+                            <span>Inglês (online)</span>
+                        </a>
+                        <a class="dropdown-item" href="letramento-melhor-idade.html">
+                            <i class="fas fa-heart"></i>
+                            <span>Letramento Digital - Melhor Idade</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="menu-link dropdown-toggle" type="button" aria-expanded="false">
+                        Doações
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="doacao.html">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Doação online</span>
+                        </a>
+                        <a class="dropdown-item" href="apadrinhe-aluno.html">
+                            <i class="fas fa-user-friends"></i>
+                            <span>Apadrinhe um aluno</span>
+                        </a>
+                        <a class="dropdown-item" href="dados-bancarios.html">
+                            <i class="fas fa-university"></i>
+                            <span>Dados bancários</span>
+                        </a>
+                    </div>
+                </div>
+                <a class="menu-link" href="index.html#contato">Contato</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="course-hero">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="course-hero-content">
+                    <div class="course-badge">
+                        <i class="fas fa-laptop"></i>
+                        <span>Curso Presencial</span>
+                    </div>
+                    <h1 class="course-hero-title">
+                        Letramento Digital
+                    </h1>
+                    <p class="course-hero-subtitle">
+                        Desenvolva habilidades digitais essenciais para o mundo moderno.<br>
+                        Aprenda a usar tecnologia no dia a dia de forma segura e eficiente.
+                    </p>
+                    <div class="course-info-cards">
+                        <div class="info-card">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Duração</strong>
+                                <span>3 meses</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <strong>Turmas</strong>
+                                <span>Até 15 alunos</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-calendar"></i>
+                            <div>
+                                <strong>Horário</strong>
+                                <span>Seg a Sex - 14h às 17h</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-hero-buttons">
+                        <a class="hero-btn primary" href="#inscricao" aria-label="Inscrever-se no curso">
+                            Inscrever-se agora
+                        </a>
+                        <a class="hero-btn secondary" href="#conteudo" aria-label="Ver conteúdo do curso">
+                            Ver conteúdo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Overview -->
+        <section class="course-overview">
+            <div class="container">
+                <div class="overview-content">
+                    <div class="overview-text">
+                        <h2 class="section-title">Sobre o curso</h2>
+                        <p class="overview-description">
+                            O curso de <span class="highlight">Letramento Digital</span> foi desenvolvido para pessoas
+                            que querem
+                            se familiarizar com o mundo digital. Aqui você aprende desde o básico do computador até
+                            como usar aplicativos essenciais do dia a dia.
+                        </p>
+                        <p class="overview-description">
+                            Nossa metodologia é <span class="highlight">prática e inclusiva</span>, respeitando o ritmo
+                            de cada aluno e focando em situações reais do cotidiano.
+                        </p>
+                        <div class="overview-stats">
+                            <div class="stat">
+                                <h3>95%</h3>
+                                <span>Taxa de conclusão</span>
+                            </div>
+                            <div class="stat">
+                                <h3>200+</h3>
+                                <span>Alunos formados</span>
+                            </div>
+                            <div class="stat">
+                                <h3>4.8/5</h3>
+                                <span>Avaliação média</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overview-image">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop&crop=center"
+                            alt="Pessoas aprendendo computação" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Content -->
+        <section class="course-content" id="conteudo">
+            <div class="container">
+                <h2 class="section-title">O que você vai aprender</h2>
+                <div class="content-modules">
+                    <div class="module">
+                        <div class="module-header">
+                            <div class="module-icon">
+                                <i class="fas fa-desktop"></i>
+                            </div>
+                            <div class="module-info">
+                                <h3>Módulo 1: Fundamentos</h3>
+                                <span>4 semanas</span>
+                            </div>
+                        </div>
+                        <ul class="module-topics">
+                            <li>Conhecendo o computador e seus componentes</li>
+                            <li>Sistema operacional Windows/Linux básico</li>
+                            <li>Navegação em pastas e arquivos</li>
+                            <li>Criação e organização de documentos</li>
+                        </ul>
+                    </div>
+
+                    <div class="module">
+                        <div class="module-header">
+                            <div class="module-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="module-info">
+                                <h3>Módulo 2: Internet e Navegação</h3>
+                                <span>4 semanas</span>
+                            </div>
+                        </div>
+                        <ul class="module-topics">
+                            <li>Como funciona a internet</li>
+                            <li>Navegadores e pesquisas eficientes</li>
+                            <li>Segurança online e senhas</li>
+                            <li>Download e upload de arquivos</li>
+                        </ul>
+                    </div>
+
+                    <div class="module">
+                        <div class="module-header">
+                            <div class="module-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="module-info">
+                                <h3>Módulo 3: Comunicação Digital</h3>
+                                <span>2 semanas</span>
+                            </div>
+                        </div>
+                        <ul class="module-topics">
+                            <li>Criação e uso de e-mail</li>
+                            <li>WhatsApp Web e Telegram</li>
+                            <li>Videoconferências (Zoom, Meet)</li>
+                            <li>Redes sociais básicas</li>
+                        </ul>
+                    </div>
+
+                    <div class="module">
+                        <div class="module-header">
+                            <div class="module-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div class="module-info">
+                                <h3>Módulo 4: Ferramentas Práticas</h3>
+                                <span>2 semanas</span>
+                            </div>
+                        </div>
+                        <ul class="module-topics">
+                            <li>Editor de texto (Word/Google Docs)</li>
+                            <li>Planilhas básicas (Excel/Sheets)</li>
+                            <li>Apresentações simples</li>
+                            <li>Aplicativos úteis do dia a dia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prerequisites -->
+        <section class="prerequisites">
+            <div class="container">
+                <div class="prerequisites-content">
+                    <div class="prerequisites-text">
+                        <h2 class="section-title">Pré-requisitos</h2>
+                        <div class="requirement-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Nenhum conhecimento prévio necessário</h3>
+                                <p>O curso é pensado para iniciantes completos</p>
+                            </div>
+                        </div>
+                        <div class="requirement-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Idade mínima: 16 anos</h3>
+                                <p>Curso aberto para jovens e adultos</p>
+                            </div>
+                        </div>
+                        <div class="requirement-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Disponibilidade de horário</h3>
+                                <p>3 horas por dia, de segunda a sexta</p>
+                            </div>
+                        </div>
+                        <div class="requirement-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Vontade de aprender</h3>
+                                <p>Dedicação e interesse em tecnologia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="benefits">
+                        <h3>O que oferecemos</h3>
+                        <ul class="benefits-list">
+                            <li><i class="fas fa-laptop"></i> Computadores disponíveis</li>
+                            <li><i class="fas fa-wifi"></i> Internet gratuita</li>
+                            <li><i class="fas fa-book"></i> Material didático incluso</li>
+                            <li><i class="fas fa-certificate"></i> Certificado de conclusão</li>
+                            <li><i class="fas fa-coffee"></i> Lanche durante o intervalo</li>
+                            <li><i class="fas fa-users"></i> Suporte individualizado</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="section-title">Depoimentos dos alunos</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"Nunca imaginei que conseguiria usar um computador. Hoje já consigo fazer videochamadas
+                                com meus netos e usar o WhatsApp Web!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop&crop=face"
+                                alt="Maria Santos" loading="lazy">
+                            <div>
+                                <strong>Maria Santos</strong>
+                                <span>62 anos - Formada em 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"O curso me deu confiança para procurar emprego. Agora sei usar Excel e fazer currículos
+                                no computador."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face"
+                                alt="João Silva" loading="lazy">
+                            <div>
+                                <strong>João Silva</strong>
+                                <span>28 anos - Formado em 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"Os professores são muito pacientes. Aprendi no meu ritmo e hoje consigo ajudar meus
+                                filhos com as tarefas online."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=80&h=80&fit=crop&crop=face"
+                                alt="Ana Costa" loading="lazy">
+                            <div>
+                                <strong>Ana Costa</strong>
+                                <span>35 anos - Formada em 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enrollment -->
+        <section class="enrollment" id="inscricao">
+            <div class="container">
+                <div class="enrollment-content">
+                    <div class="enrollment-info">
+                        <h2 class="section-title">Inscreva-se agora</h2>
+                        <p class="enrollment-description">
+                            As vagas são limitadas e preenchidas por ordem de inscrição.
+                            Garante já a sua vaga na próxima turma!
+                        </p>
+                        <div class="enrollment-details">
+                            <div class="detail-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <div>
+                                    <strong>Próxima turma</strong>
+                                    <span>Início: 15 de Março de 2025</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Local</strong>
+                                    <span>Rua Silva Jardim, 689 - Neves, São Gonçalo</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <div>
+                                    <strong>Investimento</strong>
+                                    <span>Curso 100% gratuito</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="enrollment-form">
+                        <form class="contact-form">
+                            <h3>Formulário de Inscrição</h3>
+                            <div class="form-group">
+                                <label for="name">Nome completo *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefone *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="age">Idade *</label>
+                                <input type="number" id="age" name="age" min="16" max="100" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="experience">Experiência com computador</label>
+                                <select id="experience" name="experience">
+                                    <option value="nenhuma">Nenhuma experiência</option>
+                                    <option value="basica">Experiência básica</option>
+                                    <option value="intermediaria">Experiência intermediária</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="motivation">Por que quer fazer o curso?</label>
+                                <textarea id="motivation" name="motivation" rows="3"
+                                    placeholder="Conte-nos sua motivação..."></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-paper-plane"></i>
+                                Enviar inscrição
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <img src="assets/futuroon.svg" alt="Futuroon" width="150" loading="lazy">
+                    <p class="footer-description">
+                        Instituto social que potencializa jovens e adultos da periferia, democratizando o acesso à
+                        educação e tecnologia em São Gonçalo.
+                    </p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="index.html#quem-somos">Quem somos</a></li>
+                    <li><a href="index.html#projetos">Nossos Cursos</a></li>
+                    <li><a href="doacao.html">Doações</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contato</h3>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Rua Silva jardim, 689 <br>Neves - São Gonçalo - Rio de Janeiro</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>futurooon@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>(21) 97087-2194</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Instituto Futuroon. Todos os direitos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

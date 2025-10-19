@@ -1,0 +1,546 @@
+/* ===== DONATION PAGES SPECIFIC STYLES ===== */
+
+/* Student Profile Cards */
+.student-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.student-status {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    z-index: 5;
+}
+
+.student-status.available {
+    background: var(--success);
+}
+
+.student-status.urgent {
+    background: var(--warning);
+}
+
+.student-status.sponsored {
+    background: var(--gray-500);
+}
+
+.student-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 1rem;
+    border: 3px solid;
+    flex-shrink: 0;
+}
+
+.student-photo.orange {
+    border-color: var(--primary-orange);
+}
+
+.student-photo.blue {
+    border-color: var(--primary-blue);
+}
+
+.student-photo.green {
+    border-color: var(--success);
+}
+
+.student-photo.gray {
+    border-color: var(--gray-400);
+}
+
+.student-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.student-quote {
+    font-style: italic;
+    color: var(--gray-600);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    border-left: 3px solid;
+}
+
+.student-quote.orange {
+    border-color: var(--primary-orange);
+}
+
+.student-quote.blue {
+    border-color: var(--primary-blue);
+}
+
+.student-quote.green {
+    border-color: var(--success);
+}
+
+.student-quote.gray {
+    border-color: var(--gray-400);
+}
+
+.student-info {
+    background: var(--gray-50);
+    padding: 1rem;
+    border-radius: var(--border-radius-md);
+    margin-bottom: 1rem;
+}
+
+.student-info h4 {
+    color: var(--primary-blue);
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.student-info p {
+    color: var(--gray-600);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.student-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.75rem;
+    font-size: 0.9rem;
+}
+
+.student-detail {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--gray-600);
+}
+
+.student-detail.highlight {
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+
+.student-detail i {
+    flex-shrink: 0;
+}
+
+.student-detail i.orange {
+    color: var(--primary-orange);
+}
+
+.student-detail i.blue {
+    color: var(--primary-blue);
+}
+
+.student-detail i.green {
+    color: var(--success);
+}
+
+.student-detail i.gray {
+    color: var(--gray-400);
+}
+
+/* Success Stories */
+.success-story {
+    background: var(--success-light);
+    padding: 1.5rem;
+    border-radius: var(--border-radius-lg);
+    border-left: 4px solid var(--success);
+}
+
+.success-story-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.success-story-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.success-story-name {
+    color: var(--primary-blue);
+    font-weight: 600;
+    margin: 0;
+}
+
+.success-story-year {
+    font-size: 0.9rem;
+    color: var(--gray-600);
+}
+
+.success-story-quote {
+    color: var(--gray-600);
+    font-style: italic;
+    margin: 0;
+}
+
+/* Value Cards for Donation Page */
+.value-card {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--border-radius-xl);
+    box-shadow: var(--box-shadow-md);
+    border: 2px solid var(--gray-200);
+    text-align: center;
+    transition: var(--transition-smooth);
+    cursor: pointer;
+}
+
+.value-card:hover {
+    border-color: var(--primary-orange);
+    transform: translateY(-4px);
+    box-shadow: var(--box-shadow-lg);
+}
+
+.value-card.featured {
+    border-color: var(--primary-orange);
+    position: relative;
+}
+
+/* Donation Value Grid */
+.donation-values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.donation-value-card {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--border-radius-xl);
+    box-shadow: var(--box-shadow-md);
+    border: 2px solid var(--gray-200);
+    text-align: center;
+    transition: var(--transition-smooth);
+    cursor: pointer;
+}
+
+.donation-value-card:hover {
+    border-color: var(--primary-orange);
+    transform: translateY(-4px);
+}
+
+.donation-value-card.featured {
+    border-color: var(--primary-orange);
+    position: relative;
+}
+
+.value-card-badge {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary-orange);
+    color: white;
+    padding: 0.25rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.value-card-amount {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-orange);
+    margin-bottom: 0.5rem;
+}
+
+.value-card-description {
+    color: var(--gray-600);
+    font-size: 0.9rem;
+}
+
+/* PIX Section */
+.pix-qr-section {
+    text-align: center;
+    padding: 1.5rem;
+    background: white;
+    border-radius: var(--border-radius-md);
+    border: 2px dashed var(--success);
+}
+
+.pix-qr-placeholder {
+    width: 150px;
+    height: 150px;
+    background: var(--gray-100);
+    border-radius: var(--border-radius-md);
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--gray-300);
+}
+
+.pix-qr-content {
+    text-align: center;
+    color: var(--gray-500);
+}
+
+.pix-qr-icon {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.pix-qr-text {
+    font-size: 0.8rem;
+}
+
+.pix-instruction {
+    color: var(--success);
+    font-weight: 600;
+    margin: 0;
+}
+
+/* PIX Key Cards */
+.pix-key-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: white;
+    border-radius: var(--border-radius-sm);
+    border: 1px solid var(--gray-200);
+    transition: var(--transition-smooth);
+}
+
+.pix-key-card:hover {
+    border-color: var(--success);
+}
+
+.pix-key-info {
+    flex: 1;
+}
+
+.pix-key-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.pix-key-label strong {
+    color: var(--primary-blue);
+}
+
+.pix-key-value {
+    font-family: monospace;
+    font-size: 1.1rem;
+    color: var(--gray-700);
+    background: var(--gray-50);
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.copy-button {
+    background: var(--success);
+    color: white;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    margin-left: 1rem;
+}
+
+.copy-button:hover {
+    background: var(--success-dark, #059669);
+}
+
+/* Bank Info Cards */
+.bank-info-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: var(--border-radius-md);
+    border: 1px solid var(--gray-200);
+    margin-bottom: 1rem;
+}
+
+.bank-info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    background: var(--gray-50);
+    border-radius: var(--border-radius-sm);
+    margin-bottom: 0.5rem;
+}
+
+.bank-info-row:last-child {
+    margin-bottom: 0;
+}
+
+.bank-info-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.bank-info-label strong {
+    color: var(--primary-blue);
+}
+
+.bank-info-value {
+    font-weight: 600;
+}
+
+.bank-info-value.monospace {
+    font-family: monospace;
+}
+
+/* Instructions */
+.instruction-box {
+    padding: 1rem;
+    border-radius: var(--border-radius-md);
+    border-left: 4px solid;
+}
+
+.instruction-box.success {
+    background: linear-gradient(135deg, #e8f5e8, #f0f9f0);
+    border-color: var(--success);
+}
+
+.instruction-box.info {
+    background: linear-gradient(135deg, #e3f2fd, #f0f8ff);
+    border-color: var(--primary-blue);
+}
+
+.instruction-title {
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.instruction-title.success {
+    color: var(--success);
+}
+
+.instruction-title.info {
+    color: var(--primary-blue);
+}
+
+.instruction-list {
+    color: var(--gray-600);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+.instruction-text {
+    color: var(--gray-600);
+    font-size: 0.9rem;
+    margin: 0;
+    line-height: 1.5;
+}
+/* 
+Additional styles for better organization */
+.value-card-badge {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary-orange);
+    color: white;
+    padding: 0.25rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.value-card-amount {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-orange);
+    margin-bottom: 0.5rem;
+}
+
+.value-card-description {
+    color: var(--gray-600);
+    font-size: 0.9rem;
+}
+
+/* PIX QR Code Section */
+.pix-qr-section {
+    text-align: center;
+    padding: 1.5rem;
+    background: white;
+    border-radius: var(--border-radius-md);
+    border: 2px dashed var(--success);
+}
+
+.pix-qr-placeholder {
+    width: 150px;
+    height: 150px;
+    background: var(--gray-100);
+    border-radius: var(--border-radius-md);
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--gray-300);
+}
+
+.pix-qr-content {
+    text-align: center;
+    color: var(--gray-500);
+}
+
+.pix-qr-icon {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.pix-qr-text {
+    font-size: 0.8rem;
+}
+
+.pix-instruction {
+    color: var(--success);
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .donation-values-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+    
+    .donation-value-card {
+        padding: 1.5rem;
+    }
+    
+    .value-card-amount {
+        font-size: 1.5rem;
+    }
+    
+    .pix-key-card {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .copy-button {
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    .student-details {
+        grid-template-columns: 1fr;
+    }
+}
