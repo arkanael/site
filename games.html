@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Oficinas de Games - Futuroon</title>
+    <meta name="description"
+        content="Oficinas de Games da Futuroon. Aprenda a criar jogos com Scratch, Unity e GameMaker de forma lúdica e criativa.">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/course.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a class="logo" href="index.html">
+                <img alt="Futuroon" loading="lazy" width="200" height="62" src="assets/futuroon.svg">
+            </a>
+            <button type="button" aria-label="Abrir menu" class="menu-button">
+                <svg viewbox="0 0 24 24" class="menu-icon" stroke="currentColor" fill="none" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <div class="menu">
+                <a class="menu-link" href="index.html#quem-somos">Quem somos</a>
+                <div class="dropdown">
+                    <button class="menu-link dropdown-toggle active" type="button" aria-expanded="false">
+                        Nossos Cursos
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="letramento-digital.html">
+                            <i class="fas fa-laptop"></i>
+                            <span>Letramento Digital</span>
+                        </a>
+                        <a class="dropdown-item" href="programacao.html">
+                            <i class="fas fa-code"></i>
+                            <span>Programação</span>
+                        </a>
+                        <a class="dropdown-item active" href="games.html">
+                            <i class="fas fa-gamepad"></i>
+                            <span>Games</span>
+                        </a>
+                        <a class="dropdown-item" href="ingles.html">
+                            <i class="fas fa-globe"></i>
+                            <span>Inglês (online)</span>
+                        </a>
+                        <a class="dropdown-item" href="letramento-melhor-idade.html">
+                            <i class="fas fa-heart"></i>
+                            <span>Letramento Digital - Melhor Idade</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="menu-link dropdown-toggle" type="button" aria-expanded="false">
+                        Doações
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="doacao.html">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Doação online</span>
+                        </a>
+                        <a class="dropdown-item" href="doacao.html#apadrinhe-aluno">
+                            <i class="fas fa-user-friends"></i>
+                            <span>Apadrinhe um aluno</span>
+                        </a>
+                        <a class="dropdown-item" href="doacao.html#minha-vez-ajudar">
+                            <i class="fas fa-clipboard-list"></i>
+                            <span>Minha Vez de Ajudar</span>
+                        </a>
+                        <a class="dropdown-item" href="doacao.html#doacao-kit">
+                            <i class="fas fa-box"></i>
+                            <span>Uma Doação Um Kit</span>
+                        </a>
+                        <a class="dropdown-item" href="doacao.html#dados-bancarios">
+                            <i class="fas fa-university"></i>
+                            <span>Dados bancários</span>
+                        </a>
+                    </div>
+                </div>
+                <a class="menu-link" href="index.html#contato">Contato</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="course-hero">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="course-hero-content">
+                    <div class="course-badge">
+                        <i class="fas fa-gamepad"></i>
+                        <span>Oficina Presencial</span>
+                    </div>
+                    <h1 class="course-hero-title">
+                        Oficinas de Games
+                    </h1>
+                    <p class="course-hero-subtitle">
+                        Aprenda a criar jogos de forma lúdica e criativa.<br>
+                        Desenvolva games com Scratch, Unity e GameMaker enquanto se diverte.
+                    </p>
+                    <div class="course-info-cards">
+                        <div class="info-card">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Duração</strong>
+                                <span>4 meses</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <strong>Turmas</strong>
+                                <span>Até 10 alunos</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-calendar"></i>
+                            <div>
+                                <strong>Horário</strong>
+                                <span>Sáb - 9h às 12h</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-hero-buttons">
+                        <a class="hero-btn primary" href="#inscricao" aria-label="Inscrever-se no curso">
+                            Inscrever-se agora
+                        </a>
+                        <a class="hero-btn secondary" href="#conteudo" aria-label="Ver conteúdo do curso">
+                            Ver conteúdo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Overview -->
+        <section class="course-overview">
+            <div class="container">
+                <div class="overview-content">
+                    <div class="overview-text">
+                        <h2 class="section-title">Sobre as oficinas</h2>
+                        <p class="overview-description">
+                            As <span class="highlight">Oficinas de Games</span> são voltadas para jovens que querem 
+                            aprender programação de forma divertida. Criamos jogos desde o primeiro dia, desenvolvendo 
+                            lógica de programação através da diversão.
+                        </p>
+                        <p class="overview-description">
+                            Nossa metodologia é <span class="highlight">gamificada</span>, onde cada aluno desenvolve 
+                            seus próprios jogos e aprende conceitos de programação, design e storytelling.
+                        </p>
+                        <div class="overview-stats">
+                            <div class="stat">
+                                <h3>50+</h3>
+                                <span>Jogos criados</span>
+                            </div>
+                            <div class="stat">
+                                <h3>80+</h3>
+                                <span>Jovens participantes</span>
+                            </div>
+                            <div class="stat">
+                                <h3>4.9/5</h3>
+                                <span>Diversão garantida</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overview-image">
+                        <img src="https://images.unsplash.com/photo-1556438064-2d7646166914?w=600&h=400&fit=crop&crop=center" 
+                             alt="Jovens criando games" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Content -->
+        <section class="course-content" id="conteudo">
+            <div class="container">
+                <h2 class="section-title">O que você vai criar</h2>
+                <div class="content-modules">
+                    <div class="module">
+                        <div class="module-header">
+                            <div class="module-icon">
+                                <i class="fas fa-puzzle-piece"></i>
+                            </div>
+                            <div class="module-info">
+                                <h3>Módulo 1: Scratch - Primeiros Jogos</h3>
+                                <span>4 semanas</span>
+                            </div>
+                        </div>
+                        <ul class="module-topics">
+                            <li>Introdução à programação visual</li>
+                            <li>Criação de personagens e cenários</li>
+                            <li>Jogos de plataforma simples</li>
+                            <li>Animações e efeitos sonoros</li>
+                        </ul>
+                    </div>
+
+                    <div class="module">
+                        <div class="module-header">
+                            <div class="module-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <div class="module-info">
+                                <h3>Módulo 2: GameMaker - 2D Games</h3>
+                                <span>6 semanas</span>
+                            </div>
+                        </div>
+                        <ul class="module-topics">
+                            <li>Interface do GameMaker Studio</li>
+                            <li>Sprites, objetos e rooms</li>
+                            <li>Jogos de ação e aventura</li>
+                            <li>Sistema de pontuação e vidas</li>
+                        </ul>
+                    </div>
+
+                    <div class="module">
+                        <div class="module-header">
+                            <div class="module-icon">
+                                <i class="fas fa-cube"></i>
+                            </div>
+                            <div class="module-info">
+                                <h3>Módulo 3: Unity - Jogos 3D</h3>
+                                <span>4 semanas</span>
+                            </div>
+                        </div>
+                        <ul class="module-topics">
+                            <li>Introdução ao Unity 3D</li>
+                            <li>Criação de cenários 3D</li>
+                            <li>Controles de personagem</li>
+                            <li>Física e colisões básicas</li>
+                        </ul>
+                    </div>
+
+                    <div class="module">
+                        <div class="module-header">
+                            <div class="module-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="module-info">
+                                <h3>Módulo 4: Projeto Final</h3>
+                                <span>2 semanas</span>
+                            </div>
+                        </div>
+                        <ul class="module-topics">
+                            <li>Desenvolvimento do jogo próprio</li>
+                            <li>Polimento e testes</li>
+                            <li>Apresentação para a turma</li>
+                            <li>Publicação online (opcional)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prerequisites -->
+        <section class="prerequisites">
+            <div class="container">
+                <div class="prerequisites-content">
+                    <div class="prerequisites-text">
+                        <h2 class="section-title">Pré-requisitos</h2>
+                        <div class="requirement-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Idade: 12 a 18 anos</h3>
+                                <p>Oficina voltada para adolescentes e jovens</p>
+                            </div>
+                        </div>
+                        <div class="requirement-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Paixão por jogos</h3>
+                                <p>Interesse em games e tecnologia</p>
+                            </div>
+                        </div>
+                        <div class="requirement-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Conhecimento básico de computador</h3>
+                                <p>Saber usar mouse, teclado e navegador</p>
+                            </div>
+                        </div>
+                        <div class="requirement-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Criatividade e imaginação</h3>
+                                <p>Vontade de criar e experimentar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="benefits">
+                        <h3>O que oferecemos</h3>
+                        <ul class="benefits-list">
+                            <li><i class="fas fa-gamepad"></i> Computadores para games</li>
+                            <li><i class="fas fa-headphones"></i> Headsets e equipamentos</li>
+                            <li><i class="fas fa-book"></i> Material didático interativo</li>
+                            <li><i class="fas fa-certificate"></i> Certificado de participação</li>
+                            <li><i class="fas fa-pizza-slice"></i> Lanche nos intervalos</li>
+                            <li><i class="fas fa-users"></i> Ambiente colaborativo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="section-title">Depoimentos dos participantes</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"Criei meu primeiro jogo aqui! Foi incrível ver minha ideia funcionando na tela. Agora quero estudar programação na faculdade."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face" alt="Pedro Silva" loading="lazy">
+                            <div>
+                                <strong>Pedro Silva</strong>
+                                <span>16 anos - Participante 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"As oficinas são muito divertidas! Aprendi a fazer jogos e ainda fiz novos amigos. Os professores são demais!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=80&h=80&fit=crop&crop=face" alt="Ana Beatriz" loading="lazy">
+                            <div>
+                                <strong>Ana Beatriz</strong>
+                                <span>14 anos - Participante 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"Nunca pensei que programar fosse tão legal! Criar jogos é como dar vida às minhas ideias malucas."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face" alt="Lucas Santos" loading="lazy">
+                            <div>
+                                <strong>Lucas Santos</strong>
+                                <span>15 anos - Participante 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enrollment -->
+        <section class="enrollment" id="inscricao">
+            <div class="container">
+                <div class="enrollment-content">
+                    <div class="enrollment-info">
+                        <h2 class="section-title">Inscreva-se agora</h2>
+                        <p class="enrollment-description">
+                            Transforme sua paixão por jogos em conhecimento! As vagas são limitadas 
+                            e preenchidas por ordem de inscrição.
+                        </p>
+                        <div class="enrollment-details">
+                            <div class="detail-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <div>
+                                    <strong>Próxima turma</strong>
+                                    <span>Início: 8 de Março de 2025</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Local</strong>
+                                    <span>Rua Silva Jardim, 689 - Neves, São Gonçalo</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <div>
+                                    <strong>Investimento</strong>
+                                    <span>Oficina 100% gratuita</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="enrollment-form">
+                        <form class="contact-form">
+                            <h3>Formulário de Inscrição</h3>
+                            <div class="form-group">
+                                <label for="name">Nome completo *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefone *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="age">Idade *</label>
+                                <input type="number" id="age" name="age" min="12" max="18" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="experience">Experiência com jogos</label>
+                                <select id="experience" name="experience">
+                                    <option value="iniciante">Só jogo, nunca criei</option>
+                                    <option value="basico">Já tentei criar algo</option>
+                                    <option value="intermediario">Tenho conhecimento básico</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="favorite-games">Quais seus jogos favoritos?</label>
+                                <textarea id="favorite-games" name="favorite-games" rows="2" placeholder="Ex: Minecraft, Fortnite, Among Us..."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="motivation">Que tipo de jogo você gostaria de criar?</label>
+                                <textarea id="motivation" name="motivation" rows="3" placeholder="Descreva sua ideia de jogo..."></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-paper-plane"></i>
+                                Enviar inscrição
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <img src="assets/futuroon.svg" alt="Futuroon" width="150" loading="lazy">
+                    <p class="footer-description">
+                        Instituto social que potencializa jovens e adultos da periferia, democratizando o acesso à
+                        educação e tecnologia em São Gonçalo.
+                    </p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="index.html#quem-somos">Quem somos</a></li>
+                    <li><a href="index.html#projetos">Nossos Cursos</a></li>
+                    <li><a href="doacao.html">Doações</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contato</h3>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Rua Silva jardim, 689 <br>Neves - São Gonçalo - Rio de Janeiro</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>futurooon@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>(21) 97087-2194</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Instituto Futuroon. Todos os direitos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

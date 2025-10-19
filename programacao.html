@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Programação - Futuroon</title>
+    <meta name="description"
+        content="Curso de Programação da Futuroon. Aprenda a programar do zero e desenvolva suas primeiras aplicações web.">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/course.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a class="logo" href="index.html">
+                <img alt="Futuroon" loading="lazy" width="200" height="62" src="assets/futuroon.svg">
+            </a>
+            <button type="button" aria-label="Abrir menu" class="menu-button">
+                <svg viewbox="0 0 24 24" class="menu-icon" stroke="currentColor" fill="none" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <div class="menu">
+                <a class="menu-link" href="index.html#quem-somos">Quem somos</a>
+                <div class="dropdown">
+                    <button class="menu-link dropdown-toggle active" type="button" aria-expanded="false">
+                        Nossos Cursos
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="letramento-digital.html">
+                            <i class="fas fa-laptop"></i>
+                            <span>Letramento Digital</span>
+                        </a>
+                        <a class="dropdown-item active" href="programacao.html">
+                            <i class="fas fa-code"></i>
+                            <span>Programação</span>
+                        </a>
+                        <a class="dropdown-item" href="games.html">
+                            <i class="fas fa-gamepad"></i>
+                            <span>Games</span>
+                        </a>
+                        <a class="dropdown-item" href="ingles.html">
+                            <i class="fas fa-globe"></i>
+                            <span>Inglês (online)</span>
+                        </a>
+                        <a class="dropdown-item" href="letramento-melhor-idade.html">
+                            <i class="fas fa-heart"></i>
+                            <span>Letramento Digital - Melhor Idade</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="menu-link dropdown-toggle" type="button" aria-expanded="false">
+                        Doações
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="doacao.html">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Doação online</span>
+                        </a>
+                        <a class="dropdown-item" href="apadrinhe-aluno.html">
+                            <i class="fas fa-user-friends"></i>
+                            <span>Apadrinhe um aluno</span>
+                        </a>
+                        <a class="dropdown-item" href="dados-bancarios.html">
+                            <i class="fas fa-university"></i>
+                            <span>Dados bancários</span>
+                        </a>
+                    </div>
+                </div>
+                <a class="menu-link" href="index.html#contato">Contato</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="course-hero">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="course-hero-content">
+                    <div class="course-badge">
+                        <i class="fas fa-code"></i>
+                        <span>Curso Presencial</span>
+                    </div>
+                    <h1 class="course-hero-title">
+                        Programação
+                    </h1>
+                    <p class="course-hero-subtitle">
+                        Aprenda a programar do zero e desenvolva suas primeiras aplicações.<br>
+                        Domine as linguagens mais usadas no mercado de trabalho.
+                    </p>
+                    <div class="course-info-cards">
+                        <div class="info-card">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Duração</strong>
+                                <span>6 meses</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <strong>Turmas</strong>
+                                <span>Até 12 alunos</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-calendar"></i>
+                            <div>
+                                <strong>Horário</strong>
+                                <span>Seg a Sex - 19h às 22h</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-hero-buttons">
+                        <a class="hero-btn primary" href="#inscricao" aria-label="Inscrever-se no curso">
+                            Inscrever-se agora
+                        </a>
+                        <a class="hero-btn secondary" href="#conteudo" aria-label="Ver conteúdo do curso">
+                            Ver conteúdo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Overview -->
+        <section class="course-overview">
+            <div class="container">
+                <div class="overview-content">
+                    <div class="overview-text">
+                        <h2 class="section-title">Sobre o curso</h2>
+                        <p class="overview-description">
+                            O curso de <span class="highlight">Programação</span> é voltado para quem quer entrar no 
+                            mercado de tecnologia. Você aprenderá desde a lógica de programação até o desenvolvimento 
+                            de aplicações web completas.
+                        </p>
+                        <p class="overview-description">
+                            Nossa metodologia é <span class="highlight">hands-on</span>, com projetos práticos que 
+                            simulam situações reais do mercado de trabalho. Ao final, você terá um portfólio completo.
+                        </p>
+                        <div class="overview-stats">
+                            <div class="stat">
+                                <h3>85%</h3>
+                                <span>Taxa de empregabilidade</span>
+                            </div>
+                            <div class="stat">
+                                <h3>150+</h3>
+                                <span>Alunos formados</span>
+                            </div>
+                            <div class="stat">
+                                <h3>4.9/5</h3>
+                                <span>Avaliação média</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overview-image">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop&crop=center" 
+                             alt="Pessoas programando" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Content -->
+        <section class="course-content" id="conteudo">
+            <div class="container">
+                <h2 class="section-title">O que você vai aprender</h2>
+                <div class="content-modules">
+                    <div class="module">
+                        <div class="module-header">
+                            <div class="module-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="module-info">
+                                <h3>Módulo 1: Lógica de Programação</h3>
+                                <span>6 semanas</span>
+                            </div>
+                        </div>
+                        <ul class="module-topics">
+                            <li>Algoritmos e fluxogramas</li>
+                            <li>Variáveis, tipos de dados e operadores</li>
+                            <li>Estruturas condicionais e de repetição</li>
+                            <li>Funções e procedimentos</li>
+                        </ul>
+                    </div>
+
+                    <div class="module">
+                        <div class="module-header">
+                            <div class="module-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <div class="module-info">
+                                <h3>Módulo 2: Frontend Básico</h3>
+                                <span>8 semanas</span>
+                            </div>
+                        </div>
+                        <ul class="module-topics">
+                            <li>HTML5 semântico e estruturação</li>
+                            <li>CSS3, Flexbox e Grid Layout</li>
+                            <li>JavaScript básico e DOM</li>
+                            <li>Responsividade e Mobile First</li>
+                        </ul>
+                    </div>
+
+                    <div class="module">
+                        <div class="module-header">
+                            <div class="module-icon">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <div class="module-info">
+                                <h3>Módulo 3: JavaScript Avançado</h3>
+                                <span>6 semanas</span>
+                            </div>
+                        </div>
+                        <ul class="module-topics">
+                            <li>ES6+ e programação funcional</li>
+                            <li>APIs e requisições HTTP</li>
+                            <li>Manipulação de dados (JSON)</li>
+                            <li>Frameworks (React básico)</li>
+                        </ul>
+                    </div>
+
+                    <div class="module">
+                        <div class="module-header">
+                            <div class="module-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <div class="module-info">
+                                <h3>Módulo 4: Projeto Final</h3>
+                                <span>4 semanas</span>
+                            </div>
+                        </div>
+                        <ul class="module-topics">
+                            <li>Planejamento e arquitetura</li>
+                            <li>Desenvolvimento de aplicação completa</li>
+                            <li>Versionamento com Git/GitHub</li>
+                            <li>Deploy e apresentação</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prerequisites -->
+        <section class="prerequisites">
+            <div class="container">
+                <div class="prerequisites-content">
+                    <div class="prerequisites-text">
+                        <h2 class="section-title">Pré-requisitos</h2>
+                        <div class="requirement-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Conhecimento básico de computador</h3>
+                                <p>Saber navegar na internet e usar aplicativos básicos</p>
+                            </div>
+                        </div>
+                        <div class="requirement-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Idade mínima: 18 anos</h3>
+                                <p>Curso voltado para jovens e adultos</p>
+                            </div>
+                        </div>
+                        <div class="requirement-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Ensino médio completo</h3>
+                                <p>Certificado de conclusão do ensino médio</p>
+                            </div>
+                        </div>
+                        <div class="requirement-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h3>Dedicação e disciplina</h3>
+                                <p>Disponibilidade para estudar e praticar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="benefits">
+                        <h3>O que oferecemos</h3>
+                        <ul class="benefits-list">
+                            <li><i class="fas fa-laptop"></i> Computadores de última geração</li>
+                            <li><i class="fas fa-wifi"></i> Internet de alta velocidade</li>
+                            <li><i class="fas fa-book"></i> Material didático atualizado</li>
+                            <li><i class="fas fa-certificate"></i> Certificado reconhecido</li>
+                            <li><i class="fas fa-briefcase"></i> Apoio na busca por emprego</li>
+                            <li><i class="fas fa-users"></i> Mentoria individualizada</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="section-title">Depoimentos dos alunos</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"Saí do curso direto para um estágio em desenvolvimento web. O conhecimento que adquiri aqui foi fundamental para conseguir a vaga!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face" alt="Carlos Oliveira" loading="lazy">
+                            <div>
+                                <strong>Carlos Oliveira</strong>
+                                <span>22 anos - Desenvolvedor Jr.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"O curso mudou minha vida! Hoje trabalho como freelancer e consigo sustentar minha família programando."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=80&h=80&fit=crop&crop=face" alt="Fernanda Lima" loading="lazy">
+                            <div>
+                                <strong>Fernanda Lima</strong>
+                                <span>29 anos - Desenvolvedora Freelancer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"Os professores são excelentes e o método de ensino é muito prático. Aprendi fazendo projetos reais desde o início."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face" alt="Rafael Santos" loading="lazy">
+                            <div>
+                                <strong>Rafael Santos</strong>
+                                <span>25 anos - Desenvolvedor Pleno</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enrollment -->
+        <section class="enrollment" id="inscricao">
+            <div class="container">
+                <div class="enrollment-content">
+                    <div class="enrollment-info">
+                        <h2 class="section-title">Inscreva-se agora</h2>
+                        <p class="enrollment-description">
+                            Transforme sua carreira com a programação. As vagas são limitadas e 
+                            preenchidas por ordem de inscrição e processo seletivo.
+                        </p>
+                        <div class="enrollment-details">
+                            <div class="detail-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <div>
+                                    <strong>Próxima turma</strong>
+                                    <span>Início: 1º de Abril de 2025</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Local</strong>
+                                    <span>Rua Silva Jardim, 689 - Neves, São Gonçalo</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <div>
+                                    <strong>Investimento</strong>
+                                    <span>Curso 100% gratuito</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="enrollment-form">
+                        <form class="contact-form">
+                            <h3>Formulário de Inscrição</h3>
+                            <div class="form-group">
+                                <label for="name">Nome completo *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefone *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="age">Idade *</label>
+                                <input type="number" id="age" name="age" min="18" max="100" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="education">Escolaridade *</label>
+                                <select id="education" name="education" required>
+                                    <option value="">Selecione...</option>
+                                    <option value="medio-completo">Ensino médio completo</option>
+                                    <option value="superior-incompleto">Superior incompleto</option>
+                                    <option value="superior-completo">Superior completo</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="experience">Experiência com programação</label>
+                                <select id="experience" name="experience">
+                                    <option value="nenhuma">Nenhuma experiência</option>
+                                    <option value="basica">Conhecimento básico</option>
+                                    <option value="intermediaria">Conhecimento intermediário</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="motivation">Por que quer aprender programação?</label>
+                                <textarea id="motivation" name="motivation" rows="3" placeholder="Conte-nos sua motivação..."></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-paper-plane"></i>
+                                Enviar inscrição
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <img src="assets/futuroon.svg" alt="Futuroon" width="150" loading="lazy">
+                    <p class="footer-description">
+                        Instituto social que potencializa jovens e adultos da periferia, democratizando o acesso à
+                        educação e tecnologia em São Gonçalo.
+                    </p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="index.html#quem-somos">Quem somos</a></li>
+                    <li><a href="index.html#projetos">Nossos Cursos</a></li>
+                    <li><a href="doacao.html">Doações</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contato</h3>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Rua Silva jardim, 689 <br>Neves - São Gonçalo - Rio de Janeiro</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>futurooon@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>(21) 97087-2194</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Instituto Futuroon. Todos os direitos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

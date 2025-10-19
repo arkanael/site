@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dados Bancários - Futuroon</title>
+    <meta name="description"
+        content="Dados bancários da Futuroon para doações via transferência bancária, PIX e depósito. Apoie nossa causa de forma segura e transparente.">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/donation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a class="logo" href="index.html">
+                <img alt="Futuroon" loading="lazy" width="200" height="62" src="assets/futuroon.svg">
+            </a>
+            <button type="button" aria-label="Abrir menu" class="menu-button">
+                <svg viewbox="0 0 24 24" class="menu-icon" stroke="currentColor" fill="none" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <div class="menu">
+                <a class="menu-link" href="index.html#quem-somos">Quem somos</a>
+                <div class="dropdown">
+                    <button class="menu-link dropdown-toggle" type="button" aria-expanded="false">
+                        Nossos Cursos
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="letramento-digital.html">
+                            <i class="fas fa-laptop"></i>
+                            <span>Letramento Digital</span>
+                        </a>
+                        <a class="dropdown-item" href="programacao.html">
+                            <i class="fas fa-code"></i>
+                            <span>Programação</span>
+                        </a>
+                        <a class="dropdown-item" href="games.html">
+                            <i class="fas fa-gamepad"></i>
+                            <span>Games</span>
+                        </a>
+                        <a class="dropdown-item" href="ingles.html">
+                            <i class="fas fa-globe"></i>
+                            <span>Inglês (online)</span>
+                        </a>
+                        <a class="dropdown-item" href="letramento-melhor-idade.html">
+                            <i class="fas fa-heart"></i>
+                            <span>Letramento Digital - Melhor Idade</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="menu-link dropdown-toggle active" type="button" aria-expanded="false">
+                        Doações
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="doacao.html">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Doação online</span>
+                        </a>
+                        <a class="dropdown-item" href="apadrinhe-aluno.html">
+                            <i class="fas fa-user-friends"></i>
+                            <span>Apadrinhe um aluno</span>
+                        </a>
+                        <a class="dropdown-item active" href="dados-bancarios.html">
+                            <i class="fas fa-university"></i>
+                            <span>Dados bancários</span>
+                        </a>
+                    </div>
+                </div>
+                <a class="menu-link" href="index.html#contato">Contato</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="donation-hero">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Dados Bancários
+                    </h1>
+                    <p class="hero-subtitle">
+                        Faça sua doação via transferência bancária, PIX ou depósito.<br>
+                        Todas as formas são seguras e 100% do valor vai para nossa causa.
+                    </p>
+                    <div class="trust-indicators">
+                        <div class="trust-badge">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Conta oficial verificada</span>
+                        </div>
+                        <div class="trust-badge">
+                            <i class="fas fa-receipt"></i>
+                            <span>Recibo de doação</span>
+                        </div>
+                        <div class="trust-badge">
+                            <i class="fas fa-eye"></i>
+                            <span>Transparência total</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Donation Values -->
+        <section class="course-overview">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 3rem;">
+                    <h2 class="section-title">Valores sugeridos</h2>
+                    <p style="color: var(--gray-600); font-size: 1.1rem; margin-bottom: 2rem;">
+                        Escolha um valor que cabe no seu orçamento. Qualquer quantia faz a diferença!
+                    </p>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; max-width: 800px; margin: 0 auto;">
+                        <div style="background: white; padding: 2rem; border-radius: var(--border-radius-xl); box-shadow: var(--box-shadow-md); border: 2px solid var(--gray-200); text-align: center; transition: var(--transition-smooth);" onmouseover="this.style.borderColor='var(--primary-orange)'; this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='var(--gray-200)'; this.style.transform='translateY(0)'">
+                            <div style="font-size: 2rem; font-weight: 700; color: var(--primary-orange); margin-bottom: 0.5rem;">R$ 25</div>
+                            <div style="color: var(--gray-600); font-size: 0.9rem;">Ajuda com material didático</div>
+                        </div>
+                        <div style="background: white; padding: 2rem; border-radius: var(--border-radius-xl); box-shadow: var(--box-shadow-md); border: 2px solid var(--primary-orange); text-align: center; position: relative;">
+                            <div style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: var(--primary-orange); color: white; padding: 0.25rem 1rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">Mais escolhido</div>
+                            <div style="font-size: 2rem; font-weight: 700; color: var(--primary-orange); margin-bottom: 0.5rem;">R$ 50</div>
+                            <div style="color: var(--gray-600); font-size: 0.9rem;">Custeia 1 semana de curso</div>
+                        </div>
+                        <div style="background: white; padding: 2rem; border-radius: var(--border-radius-xl); box-shadow: var(--box-shadow-md); border: 2px solid var(--gray-200); text-align: center; transition: var(--transition-smooth);" onmouseover="this.style.borderColor='var(--primary-orange)'; this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='var(--gray-200)'; this.style.transform='translateY(0)'">
+                            <div style="font-size: 2rem; font-weight: 700; color: var(--primary-orange); margin-bottom: 0.5rem;">R$ 100</div>
+                            <div style="color: var(--gray-600); font-size: 0.9rem;">Custeia 2 semanas de curso</div>
+                        </div>
+                        <div style="background: white; padding: 2rem; border-radius: var(--border-radius-xl); box-shadow: var(--box-shadow-md); border: 2px solid var(--gray-200); text-align: center; transition: var(--transition-smooth);" onmouseover="this.style.borderColor='var(--primary-orange)'; this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='var(--gray-200)'; this.style.transform='translateY(0)'">
+                            <div style="font-size: 2rem; font-weight: 700; color: var(--primary-orange); margin-bottom: 0.5rem;">R$ 200</div>
+                            <div style="color: var(--gray-600); font-size: 0.9rem;">Custeia 1 mês de curso</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bank Data Section -->
+        <section class="course-content">
+            <div class="container">
+                <h2 class="section-title">Formas de doação</h2>
+                <p style="text-align: center; color: var(--gray-600); margin-bottom: 3rem; font-size: 1.1rem;">
+                    Escolha a forma de pagamento que for mais conveniente para você
+                </p>
+                <div class="content-modules">
+                    <!-- PIX -->
+                    <div class="module">
+                        <div class="module-header">
+                            <div class="module-icon" style="background: linear-gradient(135deg, #32D74B, #28a745);">
+                                <i class="fas fa-qrcode"></i>
+                            </div>
+                            <div class="module-info">
+                                <h3>PIX - Mais rápido ⚡</h3>
+                                <span>Transferência instantânea • Disponível 24h</span>
+                            </div>
+                        </div>
+                        <div style="padding: 1.5rem; background: var(--gray-50); border-radius: var(--border-radius-md); margin-top: 1rem;">
+                            <div style="display: grid; gap: 1rem;">
+                                <!-- QR Code Section -->
+                                <div style="text-align: center; padding: 1.5rem; background: white; border-radius: var(--border-radius-md); border: 2px dashed var(--success);">
+                                    <div style="width: 150px; height: 150px; background: var(--gray-100); border-radius: var(--border-radius-md); margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; border: 2px solid var(--gray-300);">
+                                        <div style="text-align: center; color: var(--gray-500);">
+                                            <i class="fas fa-qrcode" style="font-size: 3rem; margin-bottom: 0.5rem;"></i>
+                                            <div style="font-size: 0.8rem;">QR Code PIX</div>
+                                        </div>
+                                    </div>
+                                    <p style="color: var(--success); font-weight: 600; margin: 0;">
+                                        <i class="fas fa-mobile-alt"></i> Aponte a câmera do seu celular
+                                    </p>
+                                </div>
+
+                                <!-- PIX Keys -->
+                                <div style="display: grid; gap: 0.75rem;">
+                                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: white; border-radius: var(--border-radius-sm); border: 1px solid var(--gray-200); transition: var(--transition-smooth);" onmouseover="this.style.borderColor='var(--success)'" onmouseout="this.style.borderColor='var(--gray-200)'">
+                                        <div style="flex: 1;">
+                                            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem;">
+                                                <i class="fas fa-building" style="color: var(--success);"></i>
+                                                <strong style="color: var(--primary-blue);">Chave PIX (CNPJ)</strong>
+                                            </div>
+                                            <div style="font-family: monospace; font-size: 1.1rem; color: var(--gray-700); background: var(--gray-50); padding: 0.5rem; border-radius: 4px;">12.345.678/0001-90</div>
+                                        </div>
+                                        <button onclick="copyToClipboard('12.345.678/0001-90', this)" style="background: var(--success); color: white; border: none; padding: 0.75rem 1rem; border-radius: var(--border-radius-sm); cursor: pointer; transition: var(--transition-smooth); margin-left: 1rem;">
+                                            <i class="fas fa-copy"></i> Copiar
+                                        </button>
+                                    </div>
+                                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: white; border-radius: var(--border-radius-sm); border: 1px solid var(--gray-200); transition: var(--transition-smooth);" onmouseover="this.style.borderColor='var(--success)'" onmouseout="this.style.borderColor='var(--gray-200)'">
+                                        <div style="flex: 1;">
+                                            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.25rem;">
+                                                <i class="fas fa-envelope" style="color: var(--success);"></i>
+                                                <strong style="color: var(--primary-blue);">Chave PIX (E-mail)</strong>
+                                            </div>
+                                            <div style="font-family: monospace; font-size: 1.1rem; color: var(--gray-700); background: var(--gray-50); padding: 0.5rem; border-radius: 4px;">pix@futuroon.org.br</div>
+                                        </div>
+                                        <button onclick="copyToClipboard('pix@futuroon.org.br', this)" style="background: var(--success); color: white; border: none; padding: 0.75rem 1rem; border-radius: var(--border-radius-sm); cursor: pointer; transition: var(--transition-smooth); margin-left: 1rem;">
+                                            <i class="fas fa-copy"></i> Copiar
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Instructions -->
+                                <div style="background: linear-gradient(135deg, #e8f5e8, #f0f9f0); padding: 1rem; border-radius: var(--border-radius-md); border-left: 4px solid var(--success);">
+                                    <h4 style="color: var(--success); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+                                        <i class="fas fa-info-circle"></i> Como fazer PIX:
+                                    </h4>
+                                    <ol style="color: var(--gray-600); font-size: 0.9rem; line-height: 1.5; margin: 0; padding-left: 1.25rem;">
+                                        <li>Abra o app do seu banco</li>
+                                        <li>Escolha "PIX" e depois "Transferir"</li>
+                                        <li>Cole uma das chaves PIX acima</li>
+                                        <li>Confirme os dados: <strong>Instituto Futuroon</strong></li>
+                                        <li>Digite o valor e confirme</li>
+                                        <li>Envie o comprovante para: <strong>(21) 97087-2194</strong></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Conta Corrente -->
+                    <div class="module">
+                        <div class="module-header">
+                            <div class="module-icon" style="background: linear-gradient(135deg, #007AFF, #0056CC);">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div class="module-info">
+                                <h3>Transferência Bancária 🏦</h3>
+                                <span>Banco do Brasil • TED/DOC</span>
+                            </div>
+                        </div>
+                        <div style="padding: 1.5rem; background: var(--gray-50); border-radius: var(--border-radius-md); margin-top: 1rem;">
+                            <div style="background: white; padding: 1.5rem; border-radius: var(--border-radius-md); border: 1px solid var(--gray-200); margin-bottom: 1rem;">
+                                <div style="display: grid; gap: 1rem;">
+                                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem; background: var(--gray-50); border-radius: var(--border-radius-sm);">
+                                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                            <i class="fas fa-university" style="color: var(--primary-blue);"></i>
+                                            <strong style="color: var(--primary-blue);">Banco:</strong>
+                                        </div>
+                                        <span style="font-weight: 600;">Banco do Brasil (001)</span>
+                                    </div>
+                                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem; background: var(--gray-50); border-radius: var(--border-radius-sm);">
+                                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                            <i class="fas fa-code-branch" style="color: var(--primary-blue);"></i>
+                                            <strong style="color: var(--primary-blue);">Agência:</strong>
+                                        </div>
+                                        <span style="font-weight: 600; font-family: monospace;">1234-5</span>
+                                    </div>
+                                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem; background: var(--gray-50); border-radius: var(--border-radius-sm);">
+                                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                            <i class="fas fa-credit-card" style="color: var(--primary-blue);"></i>
+                                            <strong style="color: var(--primary-blue);">Conta Corrente:</strong>
+                                        </div>
+                                        <span style="font-weight: 600; font-family: monospace;">12345-6</span>
+                                    </div>
+                                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem; background: var(--gray-50); border-radius: var(--border-radius-sm);">
+                                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                            <i class="fas fa-user" style="color: var(--primary-blue);"></i>
+                                            <strong style="color: var(--primary-blue);">Titular:</strong>
+                                        </div>
+                                        <span style="font-weight: 600;">Instituto Futuroon</span>
+                                    </div>
+                                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.75rem; background: var(--gray-50); border-radius: var(--border-radius-sm);">
+                                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                            <i class="fas fa-id-card" style="color: var(--primary-blue);"></i>
+                                            <strong style="color: var(--primary-blue);">CNPJ:</strong>
+                                        </div>
+                                        <span style="font-weight: 600; font-family: monospace;">12.345.678/0001-90</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="background: linear-gradient(135deg, #e3f2fd, #f0f8ff); padding: 1rem; border-radius: var(--border-radius-md); border-left: 4px solid var(--primary-blue);">
+                                <p style="color: var(--gray-600); font-size: 0.9rem; margin: 0; line-height: 1.5;">
+                                    <i class="fas fa-clock" style="color: var(--primary-blue);"></i> 
+                                    <strong>Horário:</strong> TED até 17h (mesmo dia) • DOC até 22h (próximo dia útil)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Poupança -->
+                    <div class="module">
+                        <div class="module-header">
+                            <div class="module-icon" style="background: linear-gradient(135deg, #FF9500, #FF8C00);">
+                                <i class="fas fa-piggy-bank"></i>
+                            </div>
+                            <div class="module-info">
+                                <h3>Conta Poupança</h3>
+                                <span>Caixa Econômica Federal</span>
+                            </div>
+                        </div>
+                        <div style="padding: 1.5rem; background: var(--gray-50); border-radius: var(--border-radius-md); margin-top: 1rem;">
+                            <div style="display: grid; gap: 0.75rem;">
+                                <div style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid var(--gray-200);">
+                                    <strong style="color: var(--primary-blue);">Banco:</strong>
+                                    <span>Caixa Econômica Federal (104)</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid var(--gray-200);">
+                                    <strong style="color: var(--primary-blue);">Agência:</strong>
+                                    <span>5678</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid var(--gray-200);">
+                                    <strong style="color: var(--primary-blue);">Conta Poupança:</strong>
+                                    <span>98765-4</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid var(--gray-200);">
+                                    <strong style="color: var(--primary-blue);">Operação:</strong>
+                                    <span>013</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; padding: 0.5rem 0;">
+                                    <strong style="color: var(--primary-blue);">Titular:</strong>
+                                    <span>Instituto Futuroon</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cartão de Crédito -->
+                    <div class="module">
+                        <div class="module-header">
+                            <div class="module-icon" style="background: linear-gradient(135deg, #8B5CF6, #7C3AED);">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                            <div class="module-info">
+                                <h3>Doação Online</h3>
+                                <span>Cartão de crédito ou débito</span>
+                            </div>
+                        </div>
+                        <div style="padding: 1.5rem; background: var(--gray-50); border-radius: var(--border-radius-md); margin-top: 1rem;">
+                            <p style="color: var(--gray-600); margin-bottom: 1.5rem;">
+                                Para maior comodidade, você também pode fazer sua doação online através do nosso formulário seguro.
+                            </p>
+                            <a href="doacao.html" style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--primary-orange); color: white; padding: 0.75rem 1.5rem; border-radius: var(--border-radius-md); text-decoration: none; font-weight: 600;">
+                                <i class="fas fa-external-link-alt"></i>
+                                Doar online agora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Important Information -->
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="section-title">Informações importantes</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <div style="text-align: center; margin-bottom: 1rem;">
+                                <i class="fas fa-receipt" style="font-size: 2rem; color: var(--primary-orange);"></i>
+                            </div>
+                            <h3 style="color: var(--primary-blue); text-align: center; margin-bottom: 1rem;">Comprovante de Doação</h3>
+                            <p>Envie o comprovante da sua transferência para nosso WhatsApp (21) 97087-2194 ou e-mail futurooon@gmail.com para receber o recibo oficial.</p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <div style="text-align: center; margin-bottom: 1rem;">
+                                <i class="fas fa-shield-check" style="font-size: 2rem; color: var(--primary-orange);"></i>
+                            </div>
+                            <h3 style="color: var(--primary-blue); text-align: center; margin-bottom: 1rem;">Segurança Garantida</h3>
+                            <p>Todas as nossas contas são oficiais e verificadas. Sempre confirme os dados bancários através dos nossos canais oficiais antes de fazer a transferência.</p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <div style="text-align: center; margin-bottom: 1rem;">
+                                <i class="fas fa-chart-line" style="font-size: 2rem; color: var(--primary-orange);"></i>
+                            </div>
+                            <h3 style="color: var(--primary-blue); text-align: center; margin-bottom: 1rem;">Transparência Total</h3>
+                            <p>Publicamos relatórios mensais sobre o uso das doações. Acompanhe o impacto da sua contribuição em nossas redes sociais e site oficial.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact for Doubts -->
+        <section class="enrollment">
+            <div class="container">
+                <div class="enrollment-content">
+                    <div class="enrollment-info">
+                        <h2 class="section-title">Dúvidas sobre doações?</h2>
+                        <p class="enrollment-description">
+                            Nossa equipe está sempre disponível para esclarecer qualquer dúvida 
+                            sobre doações e formas de contribuir com nossa causa.
+                        </p>
+                        <div class="enrollment-details">
+                            <div class="detail-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <strong>Telefone</strong>
+                                    <span>(21) 97087-2194</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <strong>E-mail</strong>
+                                    <span>futurooon@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <strong>Horário de atendimento</strong>
+                                    <span>Segunda a sexta, 9h às 18h</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Endereço</strong>
+                                    <span>Rua Silva Jardim, 689 - Neves, São Gonçalo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="enrollment-form">
+                        <form class="contact-form">
+                            <h3>Fale Conosco</h3>
+                            <div class="form-group">
+                                <label for="name">Nome completo *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Assunto</label>
+                                <select id="subject" name="subject">
+                                    <option value="duvida-doacao">Dúvida sobre doação</option>
+                                    <option value="comprovante">Enviar comprovante</option>
+                                    <option value="recibo">Solicitar recibo</option>
+                                    <option value="outros">Outros</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensagem *</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Digite sua mensagem..." required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-paper-plane"></i>
+                                Enviar mensagem
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <img src="assets/futuroon.svg" alt="Futuroon" width="150" loading="lazy">
+                    <p class="footer-description">
+                        Instituto social que potencializa jovens e adultos da periferia, democratizando o acesso à
+                        educação e tecnologia em São Gonçalo.
+                    </p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="index.html#quem-somos">Quem somos</a></li>
+                    <li><a href="index.html#projetos">Nossos Cursos</a></li>
+                    <li><a href="doacao.html">Doações</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contato</h3>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Rua Silva jardim, 689 <br>Neves - São Gonçalo - Rio de Janeiro</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>futurooon@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>(21) 97087-2194</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Instituto Futuroon. Todos os direitos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function copyToClipboard(text, button) {
+            navigator.clipboard.writeText(text).then(function() {
+                // Feedback visual melhorado
+                const originalContent = button.innerHTML;
+                button.innerHTML = '<i class="fas fa-check"></i> Copiado!';
+                button.style.background = 'var(--success)';
+                
+                // Mostrar notificação
+                showNotification('Copiado para a área de transferência!', 'success');
+                
+                setTimeout(() => {
+                    button.innerHTML = originalContent;
+                    button.style.background = '';
+                }, 2000);
+            }).catch(function() {
+                // Fallback para navegadores mais antigos
+                const textArea = document.createElement('textarea');
+                textArea.value = text;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+                
+                showNotification('Copiado para a área de transferência!', 'success');
+            });
+        }
+
+        function showNotification(message, type) {
+            // Criar notificação
+            const notification = document.createElement('div');
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: ${type === 'success' ? 'var(--success)' : 'var(--error)'};
+                color: white;
+                padding: 1rem 1.5rem;
+                border-radius: var(--border-radius-md);
+                box-shadow: var(--box-shadow-lg);
+                z-index: 10000;
+                font-weight: 600;
+                transform: translateX(100%);
+                transition: transform 0.3s ease;
+            `;
+            notification.innerHTML = `<i class="fas fa-${type === 'success' ? 'check' : 'times'}"></i> ${message}`;
+            
+            document.body.appendChild(notification);
+            
+            // Animar entrada
+            setTimeout(() => {
+                notification.style.transform = 'translateX(0)';
+            }, 100);
+            
+            // Remover após 3 segundos
+            setTimeout(() => {
+                notification.style.transform = 'translateX(100%)';
+                setTimeout(() => {
+                    document.body.removeChild(notification);
+                }, 300);
+            }, 3000);
+        }
+
+        // Adicionar efeitos hover nos cards de valores
+        document.addEventListener('DOMContentLoaded', function() {
+            const valueCards = document.querySelectorAll('[onmouseover]');
+            valueCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    // Efeito de clique
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = 'translateY(-4px)';
+                    }, 150);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
