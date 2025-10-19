@@ -1,0 +1,54 @@
+/* ===== FUTUROON - MAIN STYLESHEET ===== */
+
+/* Importação dos módulos CSS organizados */
+@import url('./variables.css');
+@import url('./base.css');
+@import url('./animations.css');
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./buttons.css');
+@import url('./sections.css');
+@import url('./footer.css');
+@import url('./responsive.css');
+
+/* Fallbacks para navegadores que não suportam CSS custom properties */
+@supports not (--css: variables) {
+    .hero-overlay {
+        background: linear-gradient(135deg, rgba(3, 82, 139, 0.9) 0%, rgba(14, 116, 144, 0.85) 50%, rgba(3, 82, 139, 0.8) 100%);
+        background-image: 
+            radial-gradient(circle at 25% 25%, rgba(255,255,255,0.05) 0%, transparent 50%),
+            radial-gradient(circle at 75% 75%, rgba(255,255,255,0.03) 0%, transparent 50%);
+    }
+    
+    .hero-btn.primary {
+        background: linear-gradient(135deg, #EA872D 0%, #d67a26 100%);
+    }
+    
+    .hero-btn {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+/* Fallbacks para navegadores que não suportam contain property */
+@supports not (contain: layout) {
+    .hero-overlay {
+        contain: none;
+    }
+}
+
+/* Fallbacks para navegadores que não suportam will-change */
+@supports not (will-change: auto) {
+    .hero-overlay {
+        will-change: auto;
+    }
+}
+
+/* Fallback para navegadores que não suportam inset property */
+@supports not (inset: 0) {
+    .hero-overlay {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+}

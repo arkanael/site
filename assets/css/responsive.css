@@ -1,0 +1,358 @@
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Mobile First - Base styles for mobile devices */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+    
+    .hero {
+        min-height: 400px;
+    }
+    
+    .hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    .about {
+        padding: 4rem 0;
+    }
+    
+    .about-content {
+        gap: 2.5rem;
+    }
+    
+    .about-title {
+        font-size: 1.75rem;
+    }
+    
+    .about-description {
+        font-size: 0.95rem;
+    }
+    
+    .support {
+        padding: 4rem 0;
+    }
+    
+    .support-title {
+        font-size: 1.75rem;
+    }
+    
+    .support-description {
+        font-size: 1rem;
+    }
+    
+    .support-buttons {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+    
+    .support-btn {
+        padding: 1rem 1.25rem;
+        font-size: 0.9rem;
+    }
+    
+    .projects {
+        padding: 4rem 0;
+    }
+    
+    .projects-title {
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+    }
+    
+    .projects-grid {
+        gap: 1.5rem;
+    }
+    
+    .project-content {
+        padding: 1.25rem;
+    }
+    
+    .project-title {
+        font-size: 1.1rem;
+    }
+    
+    .impact {
+        padding: 4rem 0;
+    }
+    
+    .impact-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .impact-stats {
+        gap: 1.5rem;
+    }
+    
+    .stat-item {
+        padding: 1.5rem 1rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .partners {
+        padding: 4rem 0;
+    }
+    
+    .partners-grid {
+        gap: 1rem;
+        margin: 2rem 0;
+    }
+    
+    .partner-logo {
+        padding: 0.75rem;
+    }
+    
+    .partner-logo img {
+        max-height: 40px;
+    }
+    
+    .success-stories-section {
+        padding: 4rem 0;
+    }
+    
+    .stories-main-title {
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+    }
+    
+    .stories-grid {
+        gap: 1.5rem;
+    }
+    
+    .story-card {
+        padding: 1.5rem;
+    }
+    
+    .story-text {
+        font-size: 1rem;
+    }
+    
+    .transparency-section {
+        padding: 4rem 0;
+    }
+    
+    .transparency-main-title {
+        font-size: 1.75rem;
+    }
+    
+    .transparency-main-text {
+        font-size: 1rem;
+    }
+    
+    .transparency-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .transparency-link {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+    
+    .footer {
+        padding: 2.5rem 0 0;
+    }
+    
+    .footer-container {
+        gap: 2rem;
+    }
+    
+    .footer-logo img {
+        width: 120px;
+    }
+    
+    .footer-social {
+        justify-content: center;
+    }
+    
+    .social-icon {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 481px) and (max-width: 768px) {
+    .hero-title {
+        font-size: 2.25rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.05rem;
+    }
+    
+    .support-buttons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .impact-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .partners-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1025px) {
+    .hero-content {
+        max-width: 1200px;
+    }
+    
+    .about-content {
+        max-width: 1200px;
+    }
+    
+    .projects-grid {
+        max-width: 1200px;
+    }
+    
+    .impact-stats {
+        max-width: 900px;
+    }
+}
+
+/* Large desktop styles */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .hero-title {
+        font-size: 4rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.35rem;
+    }
+    
+    .section-title {
+        font-size: 3rem;
+    }
+    
+    .about-title {
+        font-size: 3rem;
+    }
+    
+    .support-title {
+        font-size: 3rem;
+    }
+    
+    .projects-title {
+        font-size: 3rem;
+    }
+    
+    .impact-title {
+        font-size: 3rem;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .hero-btn,
+    .support-btn,
+    .transparency-link {
+        min-height: 48px;
+        min-width: 48px;
+    }
+    
+    .project-card:hover,
+    .partner-logo:hover,
+    .story-card:hover {
+        transform: none;
+    }
+    
+    .project-card:active,
+    .partner-logo:active,
+    .story-card:active {
+        transform: scale(0.98);
+        transition: transform 0.1s ease;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .hero-overlay {
+        background: rgba(0, 0, 0, 0.8);
+    }
+    
+    .impact-overlay {
+        background: rgba(0, 0, 0, 0.8);
+    }
+    
+    .project-card,
+    .story-card,
+    .stat-item {
+        border: 2px solid var(--gray-800);
+    }
+    
+    .partner-logo {
+        border: 2px solid var(--gray-400);
+    }
+}
+
+/* Print styles */
+@media print {
+    .header,
+    .footer,
+    .hero-buttons,
+    .support-buttons,
+    .transparency-links {
+        display: none;
+    }
+    
+    .hero {
+        background: none;
+        color: black;
+        min-height: auto;
+        padding: 2rem 0;
+    }
+    
+    .hero-overlay {
+        display: none;
+    }
+    
+    .hero-title,
+    .hero-subtitle {
+        color: black;
+        text-shadow: none;
+    }
+    
+    .section-title,
+    .about-title,
+    .projects-title,
+    .impact-title,
+    .stories-main-title,
+    .transparency-main-title {
+        color: black;
+    }
+    
+    .project-card,
+    .story-card,
+    .stat-item {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+    
+    .partner-logo img {
+        filter: none;
+    }
+}
