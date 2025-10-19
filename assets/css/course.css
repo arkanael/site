@@ -463,6 +463,10 @@
     color: white;
 }
 
+.enrollment .section-title {
+    color: white;
+}
+
 .enrollment-content {
     display: grid;
     grid-template-columns: 1fr;
@@ -597,32 +601,32 @@
         min-height: 500px;
         padding: 4rem 0;
     }
-    
+
     .course-hero-content {
         padding: 0 var(--spacing-md);
     }
-    
+
     .course-hero-title {
         font-size: 2.5rem;
     }
-    
+
     .course-hero-subtitle {
         font-size: 1rem;
     }
-    
+
     .info-card {
         padding: 1rem;
         text-align: center;
     }
-    
+
     .course-info-cards {
         max-width: 100%;
     }
-    
+
     .course-hero-buttons {
         max-width: 100%;
     }
-    
+
     .course-overview,
     .course-content,
     .prerequisites,
@@ -630,15 +634,15 @@
     .enrollment {
         padding: 4rem 0;
     }
-    
+
     .overview-stats {
         gap: 1rem;
     }
-    
+
     .stat h3 {
         font-size: 2rem;
     }
-    
+
     .enrollment-form {
         padding: 1.5rem;
     }
